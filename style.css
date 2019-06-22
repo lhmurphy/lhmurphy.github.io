@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono&display=swap");
 
 * {
-  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   background: #111111;
-  color: black;
-  text-transform: uppercase;
+  color: #ff2a56;
   margin-top: 50px;
+  font-family: 'Fira Mono', monospace;
+  font-size: 10px;
 }
 
 div {
@@ -21,7 +23,18 @@ div {
 }
 
 .coming-soon {
-  background-color: #d6b3ae;
-  color: #ff2a56;
+  color: yellow;
   margin: 100px auto;
+}
+
+a:link {
+color: #111111;
+}
+
+a:visited {
+color: #111111;
+}
+
+a:hover {
+color: #111111;
 }
