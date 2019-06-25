@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+  font-size: 12px;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -100,25 +101,59 @@ div img {
 }
 
 a:link {
-color: #000000;
+  color: #000000;
 }
 
 a:visited {
-color: #000000;
+  color: #000000;
 }
 
 a:hover {
-color: white;
-background-color: #000000;
+  color: white;
+  background-color: #000000;
 }
 
 .about {
+  padding: 80px;
+}
 
+.about-content {
+  color: black;
+  border-radius: 60px;
+  border: 2px solid #e3a4b0;
+  padding: 30px;
+  max-width: 70%;
+  justify-content: center;
+  margin: auto;
+}
+
+.about-content h2 {
+  color: #e3a4b0;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+i {
+  font-size: 5em;
 }
 
 .projects {
   height: 100vh;
 }
+
 
 /*
 div {
