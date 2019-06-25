@@ -37,10 +37,7 @@ body {
 
 .cover-left p {
   font-size: 20px;
-  letter-spacing: 0.1em;
-  margin: auto;
-  padding: 60px;
-  line-height: 1.2em;
+  margin: 0 auto 250px auto;
 }
 
 .cover-left img {
@@ -48,7 +45,7 @@ body {
   border-radius: 50%;
   padding: 15px;
   border: 2px solid #e3a4b0;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 .cover-left a:visited {
@@ -81,9 +78,16 @@ div img {
 
 .links {
   position: absolute;
-  top: 26%; /* Adjust this value to move the positioned div up and down */
+  top: 30%;
   text-align: center;
-  width: 50%;
+}
+
+.links p {
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
 .links h1 {
@@ -92,10 +96,9 @@ div img {
 
 .clouds {
   font-size: 12px;
-  line-height: 60px;
   display: flex;
   flex-direction: column;
-  color: #000000;
+  color: #484848;
   width: 100%;
   text-align: center;
 }
@@ -135,7 +138,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 10px 30px;
+  background-color: black;
 }
 
 ul {
@@ -155,6 +159,17 @@ i {
 .projects {
   height: 100vh;
 }
+
+.projects-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projects img {
+  max-height: 200px;
+}
+
 
 
 /*
