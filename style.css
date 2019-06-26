@@ -117,7 +117,7 @@ a:hover {
 }
 
 .about {
-  padding: 80px;
+  padding: 30px;
 }
 
 .about-content {
@@ -128,6 +128,7 @@ a:hover {
   max-width: 70%;
   justify-content: center;
   margin: auto;
+  background-color: white;
 }
 
 .about-content h2 {
@@ -156,21 +157,33 @@ i {
   font-size: 5em;
 }
 
-.projects {
-  height: 100vh;
+.experience {
+  display: flex;
 }
 
-.projects-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.experience img {
+  max-height: 70px;
+}
+
+
+
+.projects {
+
+  height: 100vh;
+  width: 80vw;
 }
 
 .projects img {
-  max-height: 200px;
+  max-height: 250px;
 }
 
+.projects div {
+  display: flex;
+}
 
+.projects p {
+  max-width: 400px;
+}
 
 /*
 div {
