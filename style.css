@@ -26,26 +26,41 @@ body {
   flex-wrap: wrap;
 }
 
-.cover-left {
+.title {
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.cover{
   display: flex;
   flex-direction: column;
   background-color: #000000;
   height: 100vh;
-  width: 50%;
-  float: left;
+  width: 100vw;
 }
 
-.cover-left p {
+.cover p {
   font-size: 20px;
   margin: 0 auto 250px auto;
+  display: flex;
 }
 
-.cover-left img {
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+}
+
+.intro img {
   max-width: 200px;
   border-radius: 50%;
   padding: 15px;
-  border: 2px solid #e3a4b0;
-  margin-top: 150px;
+  border: 1px solid #e3a4b0;
+  margin: 200px auto 40px auto;
+
 }
 
 .cover-left a:visited {
@@ -63,18 +78,18 @@ body {
 
 .cover-right {
   display: flex;
-  background-color: white;
+  background-color: #000000;
   height: 100vh;
   width: 50%;
   float: right;
   font-size: 8px;
 }
 
-div img {
+/* div img {
   display: inline-block;
   max-width: 55%;
   margin: auto;
-}
+} */
 
 .links {
   position: absolute;
@@ -95,13 +110,17 @@ div img {
 }
 
 .clouds {
+  position: absolute;
+}
+
+/* .clouds {
   font-size: 12px;
   display: flex;
   flex-direction: column;
   color: #484848;
   width: 100%;
   text-align: center;
-}
+} */
 
 a:link {
   color: #000000;
@@ -117,7 +136,7 @@ a:hover {
 }
 
 .about {
-  padding: 30px;
+  padding: 75px 30px 30px 30px;
 }
 
 .about-content {
@@ -133,6 +152,17 @@ a:hover {
 
 .about-content h2 {
   color: #e3a4b0;
+}
+
+/* .about-wrapper img {
+  position: absolute;
+  z-index: -1;
+  max-height: 510px;
+  padding-left: 37%;
+} */
+
+.skills .title {
+  padding: 80px 0 40px 40px;
 }
 
 .icons {
@@ -157,32 +187,51 @@ i {
   font-size: 5em;
 }
 
-.experience {
+.experience-wrapper {
+  padding: 80px 40px;
+}
+
+.experience-content {
   display: flex;
 }
 
-.experience img {
+.experience-box {
+  width: 30%;
+  margin: auto;
+  /* background-image: url("images/pinkclouds.jpg"); */
+  border-radius: 30px;
+  padding: 15px;
+  height: 350px;
+  width: 330px;
+  color: black;
+}
+
+.experience-content img {
   max-height: 70px;
 }
 
-
-
-.projects {
-
-  height: 100vh;
-  width: 80vw;
-}
-
-.projects img {
-  max-height: 250px;
-}
-
-.projects div {
+.projects-wrapper {
   display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+}
+
+.projects-wrapper .title {
+  padding: 0 0 40px 40px;
 }
 
 .projects p {
   max-width: 400px;
+  margin: auto;
+}
+
+.project-box {
+  display: flex;
+}
+
+.project-box img {
+  max-width: 450px;
 }
 
 /*
