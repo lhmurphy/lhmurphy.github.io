@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Laura Murphy: My Portfolio</title>
@@ -11,7 +12,13 @@
   <body>
     <!-- navbar -->
     <header id="navbar">
-      <h1>Laura Murphy</h1>
+      <div id="navbar" class="logo">Laura Murphy</div>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
     </header>
     <!-- cover left -->
       <div class="cover">
@@ -26,7 +33,7 @@
       <!-- main -->
       <div class="container">
       <!-- about -->
-      <div class="about-wrapper">
+      <div id="about" class="about-wrapper">
         <!-- <img src="images/pinkclouds.jpg" alt="clouds"> -->
         <div class="about">
           <div class="about-content">
@@ -78,7 +85,7 @@
         </ul>
       </div>
       <!-- experience -->
-      <section class="experience-wrapper">
+      <section id="experience" class="experience-wrapper">
         <h2 class="title">experience</h2>
         <div class="experience-content">
           <div class="experience-box">
@@ -134,7 +141,7 @@
       </section>
       <!-- projects -->
 
-      <h2 class="projects-title">more about my projects</h2>
+      <h2 id="projects" class="projects-title">more about my projects</h2>
       <section class="projects-wrapper">
         <div class="project-box">
           <div class="project-box-left">
@@ -217,7 +224,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-wrapper">
+      <section id="contact"class="contact-wrapper">
         <ul>
           <li><a href="mailto:laurahelenamurphy@gmail.com">< email ></a></li>
           <li><a href="https://github.com/lhmurphy" target="_blank">< github ></a></li>
