@@ -253,6 +253,19 @@ h3 {
   color: grey;
 }
 
+.projects-wrapper a:link {
+  color: black;
+}
+
+.projects-wrapper a:visited {
+  color: black;
+}
+
+.projects-wrapper a:hover {
+  color: white;
+  background-color: #e3a4b0;
+}
+
 .projects-title {
   background-color: black;
   text-align: center;
@@ -277,11 +290,19 @@ h3 {
   font-size: 15px;
 }
 
+
+.contact-wrapper a:link {
+  color: black;
+}
+
+.contact-wrapper a:visited {
+  color: black;
+}
+
 .contact-wrapper a:hover {
   color: white;
   background-color: #e3a4b0;
 }
-
 /* RESPONSIVE */
 
 /* navbar  */
