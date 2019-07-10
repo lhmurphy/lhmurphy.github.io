@@ -2,9 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="app.js" charset="utf-8"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Laura Murphy: My Portfolio</title>
@@ -12,12 +14,12 @@
   <body>
     <!-- navbar -->
     <header id="navbar">
-      <div id="navbar" class="logo">Laura Murphy</div>
+      <div class="logo">Laura Murphy</div>
       <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#experience">experience</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a class="about" href="#about">about</a></li>
+        <li><a class="experience" href="#experience">experience</a></li>
+        <li><a class="projects" href="#projects">projects</a></li>
+        <li><a class="contact" href="#contact">contact</a></li>
       </ul>
     </header>
     <!-- cover left -->
@@ -35,14 +37,14 @@
       <!-- about -->
       <div id="about" class="about-wrapper">
         <!-- <img src="images/pinkclouds.jpg" alt="clouds"> -->
-        <div class="about">
+        <div class="about-section">
           <div class="about-content">
           <h2 class="title">about</h2>
             <p>
               I’ve always been interested in learning new skills and building things from scratch, meaning I’m most happy when
               I’m making a piece of jewellery for a friend, upcycling a tired piece of furniture or, if I’m really lucky, putting
-              together an item from Ikea. It’s that creative satisfaction that comes with completing hands-on projects that e
-              ncouraged me to research a career in web development.
+              together an item from Ikea. It’s that creative satisfaction that comes with completing hands-on projects that
+              encouraged me to research a career in web development.
             </p>
             <p>
               While working in the publishing industry, I started to notice a few women around me who were learning to code and it
@@ -176,7 +178,7 @@
               a decision whether to cycle based on current weather and pollution
               levels as well as show them Santander bike spots local to them.
             </p>
-            <p><a href="https://github.com/lhmurphy/SEI-Project-2-React-Hackathon" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">Live site</a></p>
+            <p><a href="https://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">Live site</a></p>
           </div>
         </div>
         <div class="project-box">
