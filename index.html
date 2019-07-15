@@ -5,6 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5d804b1eef.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="app.js" charset="utf-8"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -25,41 +27,44 @@
     <!-- cover -->
       <div class="cover">
         <div class="intro">
-          <img id="profile-pic" class="formal" src="images/laura.png" alt="profile-image">
+          <img id="change-image" src="images/laura.png" alt="profile-image">
           <h2>Hi I'm Laura, a Web Developer based in London.</h2>
         </div>
-        <label class="switch">
+        <!-- <label class="switch">
           <input type="checkbox" id="checkbox">
           <span class="slider round"></span>
-        </label>
+          <div class="button-container">
+            <button class="laura-button">formal</button>
+            <button class="code-button">casual</button>
+          </div>
+        </label> -->
       </div>
       <!-- main -->
       <div class="container">
       <!-- about -->
       <div id="about" class="about-wrapper">
+        <h2 class="title"> about </h2>
         <div class="about-section">
-          <h2 class="title"> about </h2>
+          <div class="about-img">
+            <a href="https://medium.com/@laurahelenamurphy/why-i-chose-programming-as-my-new-career-path-b6c27749860f" target="_blank"><img src="images/code.jpeg" alt="code"></a>
+          </div>
           <div class="about-content">
             <p>
-              I’ve always been interested in learning new skills and building things from scratch, meaning I’m most happy when
-              I’m making a piece of jewellery for a friend, upcycling a tired piece of furniture or, if I’m really lucky, putting
-              together an item from Ikea. It’s that creative satisfaction that comes with completing hands-on projects that
-              encouraged me to research a career in web development.
+              As someone who has always loved learning new skills and building
+              things from scratch, I soon became inspired by people around me
+              who were learning to code. After 18 months in a venture support
+              role, where I took the time to assimilate myself with the tech
+              industry, I decided to join the General Assembly Software
+              Engineering Immersive to switch careers and embark on a journey
+              into web development.
             </p>
             <p>
-              While working in the publishing industry, I started to notice a few women around me who were learning to code and it
-              piqued an interest in me, so much so that I started to look into what ‘coding’ actually entailed. I was drawn to the
-              problem-solving aspect of web development and the fact that it was a skill I could learn, hone and be proud of. I
-              decided to find a role in a tech company to assimile myself with this new industry and find out a bit more about the
-              world of programming.
+              I believe that true learning is being
+              creative and I look forward to being able to continue my career
+              of learning and growing my skills in web development.
             </p>
-            <p>
-              I took the plunge and joined the General Assembly Software Engineering Immersive course which was a hugely rewarding
-              challenge. With all of the new technical skills I’ve gained throughout the course, I’m excited to finally be able to
-              realise the multitude of project ideas that have started to fill up my iPhone notes. On top of these skills, I learnt
-              an enormous amount about myself and what I’m capable of achieving in such a short period of time. I’m excited to take
-              these new skills into a web development role so that I can continue this new life-long career of coding and learning.
-            </p>
+            <i class="fa fa-arrow-left bounce"></i>
+            <p style="display:inline">Click on the image to read about why I chose programming...</p>
           </div>
         </div>
       </div>
@@ -147,85 +152,89 @@
       <!-- projects -->
 
       <h2 id="projects" class="projects-title">projects</h2>
+
+
       <section class="projects-wrapper">
-        <div class="project-box">
-          <div class="project-box-left">
-            <img src="images/spaceinvaders.png" alt="space invaders">
+        <div class="projects-wrapper-overlay">
+          <div class="project-box">
+            <div class="project-box-left">
+              <img src="images/spaceinvaders.png" alt="space invaders">
+            </div>
+            <div class="project-box-right">
+              <h3>Space Invaders Game</h3>
+              <h4>HTML5 | CSS | JavaScript </h4>
+              <p>
+                A week-long solo project building a game with pure JavaScript,
+                CSS, Flexbox and GitHub in the theme of Mexican wrestlers inspired
+                by a recent trip to Mexico.
+              </p>
+              <p><a href="https://github.com/lhmurphy/SEI-project-1" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-project-1/" target="_blank">Live site</a></p>
+            </div>
           </div>
-          <div class="project-box-right">
-            <h3>Space Invaders Game</h3>
-            <h4>HTML5 | CSS | JavaScript </h4>
-            <p>
-              A week-long solo project building a game with pure JavaScript,
-              CSS, Flexbox and GitHub in the theme of Mexican wrestlers inspired
-              by a recent trip to Mexico.
-            </p>
-            <p><a href="https://github.com/lhmurphy/SEI-project-1" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-project-1/" target="_blank">Live site</a></p>
+          <hr>
+          <div class="project-box">
+            <div class="project-box-left">
+              <img src="images/cycling.png" alt="cycling">
+            </div>
+            <div class="project-box-right">
+              <h3>London Cycling</h3>
+              <h4> HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack |
+                AJAX | APIs | Bulma | GitHub | React-mapbox-gl </h4>
+              <p>
+                A two-day pair coding project using React.js on the frontend that
+                consumes data from existing APIs: DarkSky and TFL. Implemented
+                React-mapbox-gl, Webpack, AJAX, JavaScript (ES6), HTML5, Bulma,
+                SCSS, GitHub. My main focus on this project was building the map
+                on the page, consuming the varying data from both APIs and ensuring
+                that data fed through correctly. This app will help cyclists make
+                a decision whether to cycle based on current weather and pollution
+                levels as well as show them Santander bike spots local to them.
+              </p>
+              <p><a href="https://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">Live site</a></p>
+            </div>
           </div>
-        </div>
-        <hr>
-        <div class="project-box">
-          <div class="project-box-left">
-            <img src="images/cycling.png" alt="cycling">
+          <hr>
+          <div class="project-box">
+            <div class="project-box-left">
+              <img src="images/nerdcrate.jpg" alt="nerdcrate">
+            </div>
+            <div class="project-box-right">
+              <h3>Nerd Crate</h3>
+              <h4>HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack |
+                AJAX | Node.js | MongoDB | Mongoose | Express | Bulma | GitHub  </h4>
+              <p>
+                A week-long full-stack project in a group of four people, using
+                Node.js, MongoDB/Mongoose and Express on the backend and using
+                React.js on the frontend. In this project I built the seeds file
+                and worked on the code for the basket. Implemented Webpack, AJAX,
+                JavaScript (ES6), HTML5, Bulma, SCSS, GitHub. This is a prototype
+                for an e-commerce merchandise store.
+              </p>
+              <p><a href="https://github.com/lhmurphy/SEI-Project-3" target="_blank">See the code</a> | <a href="https://nerdcrate.herokuapp.com/#/" target="_blank">Live site</a></p>
+            </div>
           </div>
-          <div class="project-box-right">
-            <h3>London Cycling</h3>
-            <h4> HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack |
-              AJAX | APIs | Bulma | GitHub | React-mapbox-gl </h4>
-            <p>
-              A two-day pair coding project using React.js on the frontend that
-              consumes data from existing APIs: DarkSky and TFL. Implemented
-              React-mapbox-gl, Webpack, AJAX, JavaScript (ES6), HTML5, Bulma,
-              SCSS, GitHub. My main focus on this project was building the map
-              on the page, consuming the varying data from both APIs and ensuring
-              that data fed through correctly. This app will help cyclists make
-              a decision whether to cycle based on current weather and pollution
-              levels as well as show them Santander bike spots local to them.
-            </p>
-            <p><a href="https://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">Live site</a></p>
-          </div>
-        </div>
-        <hr>
-        <div class="project-box">
-          <div class="project-box-left">
-            <img src="images/nerdcrate.jpg" alt="nerdcrate">
-          </div>
-          <div class="project-box-right">
-            <h3>Nerd Crate</h3>
-            <h4>HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack |
-              AJAX | Node.js | MongoDB | Mongoose | Express | Bulma | GitHub  </h4>
-            <p>
-              A week-long full-stack project in a group of four people, using
-              Node.js, MongoDB/Mongoose and Express on the backend and using
-              React.js on the frontend. In this project I built the seeds file
-              and worked on the code for the basket. Implemented Webpack, AJAX,
-              JavaScript (ES6), HTML5, Bulma, SCSS, GitHub. This is a prototype
-              for an e-commerce merchandise store.
-            </p>
-            <p><a href="https://github.com/lhmurphy/SEI-Project-3" target="_blank">See the code</a> | <a href="https://nerdcrate.herokuapp.com/#/" target="_blank">Live site</a></p>
-          </div>
-        </div>
-        <hr>
-        <div class="project-box">
-          <div class="project-box-left">
-            <img src="images/wanderlist.png" alt="wanderlist">
-          </div>
-          <div class="project-box-right">
-            <h3>Wanderlist</h3>
-            <h4>HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack | AJAX
-              | PostgreSQL | Flask | Bulma | GitHub | React Select </h4>
-            <p>
-              A week-long full-stack solo project building the backend database
-              with Python/Postgres and consuming data on the frontend with
-              React.js. Implemented Webpack, AJAX, JavaScript (ES6),
-              PostgreSQL, Flask, HTML5, Bulma, SCSS, GitHub, React Select. As
-              this was a solo project, I planned all wireframes, ERDs and
-              relationship schemas before setting out to build the project. I
-              used Trello to organise and prioritise my time. This is a
-              community-based application for users to find their next read
-              based on their travel destination.
-            </p>
-            <p><a href="https://github.com/lhmurphy/SEI-Project-4" target="_blank">See the code</a> | <a href="https://lauras-travel-books.herokuapp.com/#/" target="_blank">Live site</a></p>
+          <hr>
+          <div class="project-box">
+            <div class="project-box-left">
+              <img src="images/wanderlist.png" alt="wanderlist">
+            </div>
+            <div class="project-box-right">
+              <h3>Wanderlist</h3>
+              <h4>HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack | AJAX
+                | PostgreSQL | Flask | Bulma | GitHub | React Select </h4>
+              <p>
+                A week-long full-stack solo project building the backend database
+                with Python/Postgres and consuming data on the frontend with
+                React.js. Implemented Webpack, AJAX, JavaScript (ES6),
+                PostgreSQL, Flask, HTML5, Bulma, SCSS, GitHub, React Select. As
+                this was a solo project, I planned all wireframes, ERDs and
+                relationship schemas before setting out to build the project. I
+                used Trello to organise and prioritise my time. This is a
+                community-based application for users to find their next read
+                based on their travel destination.
+              </p>
+              <p><a href="https://github.com/lhmurphy/SEI-Project-4" target="_blank">See the code</a> | <a href="https://lauras-travel-books.herokuapp.com/#/" target="_blank">Live site</a></p>
+            </div>
           </div>
         </div>
       </section>

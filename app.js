@@ -1,8 +1,6 @@
 $(document).ready(() => {
   console.log('this is working')
 
-  $('#navbar li').addClass('navbar-animate')
-
   // $('.switch').click(function(){
   //   if (!$('#profile-pic').hasClass('formal')) {
   //     $('#profile-pic').attr('src', 'images/code.jpeg')
@@ -14,6 +12,30 @@ $(document).ready(() => {
   //     $('#profile-pic').removeClass('formal')
   //   }
   // })
+
+  // $('.laura-button').on({
+  //   'click': function(){
+  //     $('#change-image').attr('src','images/laura.png')
+  //   }
+  // })
+  //
+  // $('.code-button').on({
+  //   'click': function(){
+  //     $('#change-image').attr('src','images/code.jpeg')
+  //   }
+  // })
+
+  var laura = 'images/laura.png'
+  var code = 'images/code.jpeg'
+
+  $('.switch').click(function() {
+    if ($('#change-image').attr('src') === code) {
+      $('#change-image').attr('src', laura)
+    } else {
+      $('#change-image').attr('src', code)
+    }
+  })
+
 
   $('#checkbox').click(function () {
     $('#profile-pic').toggleClass('casual')
