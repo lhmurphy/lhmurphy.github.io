@@ -16,6 +16,7 @@ p {
   font-size: 15px;
   line-height: 1.7em;
   letter-spacing: 0.5px;
+  margin: 0px;
 }
 
 #navbar {
@@ -585,4 +586,30 @@ hr {
   .bounce {
     display: none;
   }
+}
+
+.blog-container {
+  padding: 100px 0;
+}
+
+.post-container > header {
+  text-align: center;
+}
+
+.post-content {
+  padding: 0 200px;
+  line-height: 5px;
+}
+
+.post-content > p {
+  margin: 0px;
+}
+
+.post-content > ol {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.post-content > li {
+  padding: 0;
 }
