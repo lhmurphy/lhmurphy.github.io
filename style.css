@@ -598,7 +598,7 @@ hr {
 
 .post-content {
   padding: 0 200px;
-  line-height: 5px;
+  /* line-height: 5px; */
 }
 
 .post-content > p {
@@ -612,4 +612,5 @@ hr {
 
 .post-content > li {
   padding: 0;
+  line-height: 30px;
 }
