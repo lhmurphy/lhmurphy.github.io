@@ -283,7 +283,7 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-i {
+.icons i {
   font-size: 5em;
 }
 
@@ -612,3 +612,5 @@ hr {
 .post-content > li {
   padding: 0;
 }
+
+po
