@@ -592,12 +592,18 @@ hr {
   padding: 100px 0;
 }
 
-.post-container > header {
+.blog-container header {
+  padding-bottom: 25px;
   text-align: center;
 }
 
+.blog-container ol {
+  list-style: none;
+}
+
 .post-content {
-  padding: 0 200px;
+  width: 60%;
+  margin: auto;
 }
 
 .post-content > p {
@@ -613,4 +619,17 @@ hr {
   padding: 0;
 }
 
-po
+.l-posts {
+  width: 60%;
+  margin: auto;
+}
+
+.c-post-item {
+  padding-bottom: 30px;
+}
+
+.date {
+  display: inline-block;
+  min-width: 200px;
+  padding-right: 10px;
+}
