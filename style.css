@@ -413,6 +413,58 @@ hr {
   background-image: linear-gradient(to right, rgba(0,0,0,0), #e3a4b0, rgba(0,0,0,0));
 }
 
+
+.blog-container {
+  padding: 100px 0;
+}
+
+.blog-container header {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.blog-container ol {
+  list-style: none;
+}
+
+.b-landing-pg {
+  height: 60vh;
+}
+
+.post-content {
+  width: 60%;
+  margin: auto;
+}
+
+.post-content > p {
+  margin: 0px;
+}
+
+.post-content > ol {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.post-content > li {
+  padding: 0;
+}
+
+.l-posts {
+  width: 60%;
+  margin: auto;
+}
+
+.c-post-item {
+  padding-bottom: 30px;
+}
+
+.date {
+  display: inline-block;
+  min-width: 200px;
+  padding-right: 10px;
+}
+
+
 /* KEYFRAMES */
 
 /* Image shake */
@@ -586,50 +638,10 @@ hr {
   .bounce {
     display: none;
   }
-}
 
-.blog-container {
-  padding: 100px 0;
-}
+// why isnt this working?
+  .blog-container {
+    padding: 250px 0;
+  }
 
-.blog-container header {
-  padding-bottom: 25px;
-  text-align: center;
-}
-
-.blog-container ol {
-  list-style: none;
-}
-
-.post-content {
-  width: 60%;
-  margin: auto;
-}
-
-.post-content > p {
-  margin: 0px;
-}
-
-.post-content > ol {
-  list-style: none;
-  margin-left: -40px;
-}
-
-.post-content > li {
-  padding: 0;
-}
-
-.l-posts {
-  width: 60%;
-  margin: auto;
-}
-
-.c-post-item {
-  padding-bottom: 30px;
-}
-
-.date {
-  display: inline-block;
-  min-width: 200px;
-  padding-right: 10px;
 }
