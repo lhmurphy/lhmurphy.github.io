@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: #e3a4b0;
+  color: #f984a9;
   font-family: 'Fira Mono', monospace;
   width: 100%;
 }
@@ -47,11 +47,11 @@ p {
 }
 
 #navbar a:link {
-  color: #e3a4b0;
+  color: #f984a9;
 }
 
 #navbar a:visited {
-  color: #e3a4b0;
+  color: #f984a9;
 }
 
 #navbar a:hover {
@@ -147,7 +147,7 @@ span {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e3a4b0;
+  background-color: #f984a9;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -240,7 +240,7 @@ input:checked + .slider:before {
 .about-content {
   color: black;
   border-radius: 60px;
-  border: 2px solid #e3a4b0;
+  border: 2px solid #f984a9;
   padding: 30px;
   max-width: 50%;
   justify-content: center;
@@ -253,7 +253,7 @@ input:checked + .slider:before {
 }
 
 .about-content h2 {
-  color: #e3a4b0;
+  color: #f984a9;
 
 }
 
@@ -372,7 +372,7 @@ h4 {
 
 .projects-wrapper a:hover {
   color: white;
-  background-color: #e3a4b0;
+  background-color: #f984a9;
 }
 
 .contact-wrapper {
@@ -403,7 +403,7 @@ h4 {
 
 .contact-wrapper a:hover {
   color: white;
-  background-color: #e3a4b0;
+  background-color: #f984a9;
 }
 
 hr {
