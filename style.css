@@ -449,6 +449,10 @@ hr {
   padding: 0;
 }
 
+.post-content > ul {
+  line-height: 1.5rem;
+}
+
 .l-posts {
   width: 60%;
   margin: auto;
@@ -463,6 +467,15 @@ hr {
   min-width: 200px;
   padding-right: 10px;
 }
+
+code {
+  color: black;
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
 
 
 /* KEYFRAMES */
