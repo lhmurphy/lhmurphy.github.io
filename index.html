@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="backup-style.css">
+    <!-- <link rel="stylesheet/scss" type="text/css" href="style.scss" />
+    <script src="scss.js" type="text/javascript"></script> -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/5d804b1eef.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="app.js" charset="utf-8"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏄‍♀️</text></svg>">
     <title>Portfolio c/o Laura Murphy | London Web Developer</title>
   </head>
   <body>
     <!-- navbar -->
-    <header id="navbar">
-      <div class="logo"><a href="#home">Laura Murphy</a></div>
-      <ul>
+    <header class="header">
+      <div class="header__logo"><a href="#home">Laura Murphy</a></div>
+      <ul class="header__list-items">
         <li><a class="about" href="#about">about</a></li>
         <li><a class="experience" href="#experience">experience</a></li>
         <li><a class="projects" href="#projects">projects</a></li>
@@ -25,232 +26,48 @@
         <li><a class="blog" href="blog/blog.html">blog</a></li>
       </ul>
     </header>
-    <!-- cover -->
-      <div class="cover" id="home">
-        <div class="intro">
-          <img id="change-image" src="images/laura-gif.gif" alt="profile-image">
-          <h2>Hi I'm Laura, a Web Developer based in London.</h2>
-        </div>
-        <!-- <label class="switch">
-          <input type="checkbox" id="checkbox">
-          <span class="slider round"></span>
-          <div class="button-container">
-            <button class="laura-button">formal</button>
-            <button class="code-button">casual</button>
-          </div>
-        </label> -->
-      </div>
-      <!-- main -->
+    <main>
       <div class="container">
-      <!-- about -->
-      <div id="about" class="about-wrapper">
-        <h2 class="title"> about </h2>
-        <div class="about-section">
-          <div class="about-img">
-            <a href="https://medium.com/@laurahelenamurphy/why-i-chose-programming-as-my-new-career-path-b6c27749860f" target="_blank"><img src="images/code.jpeg" alt="code"></a>
+        <div class=""></div>
+
+
+
+        <div class="modal">
+          <div class="cross">X</div>
+            Counting the days, hours, minutes and seconds since I started my first Web Development job - yeesh it's going fast!
+        </div>
+        <div class="intro">
+          <img class="laura-img" id="change-image" src="images/laura-gif.gif" alt="profile-image">
+          <h2>Hi, I'm Laura, a Front-End Web Developer, mac and cheese addict, book lover and one-time surfer of the Mexican Pipeline<div class="asterisks">*</div>. 
+            Currently working at <div class="selfridges"> <a href="https://www.linkedin.com/in/lhmurphy/">Selfridges </a></div> in London. 
+            I <span>blog</span> here and there about the code-related things I’m learning. Have a nose around my <span>recent projects</span> or
+            stop by and say <span> hi</span>. <div class="small">*I'm not a surfer. I cannot surf. But I still gave it a shot.</div> 
+          </h2>
+          <div id="counter">
+            <div id="counter-d"> </div>
+            <div id="counter-h"> </div>
+            <div id="counter-m"> </div>
+            <div id="counter-s"> </div>
           </div>
-          <div class="about-content">
-            <p>
-              As someone who has always loved learning new skills and building
-              things from scratch, I soon became inspired by people around me
-              who were learning to code. After 18 months in a venture support
-              role, where I took the time to assimilate myself with the tech
-              industry, I decided to join the General Assembly Software
-              Engineering Immersive to switch careers and embark on a journey
-              into web development.
-            </p>
-            <p>
-              I believe that true learning is being
-              creative and I look forward to being able to continue my career
-              of learning and growing my skills in web development.
-            </p>
-            <i class="fa fa-arrow-left bounce"></i>
-            <p style="display:inline">Click on the image to read about why I chose programming...</p>
+          <div class="contact-icons">
+            <a class="contact-icon" href="https://twitter.com/lhm8">
+              <img src="images/001-twitter.png" alt="Twitter icon">
+            </a>
+            <a class="contact-icon" href="https://www.instagram.com/laurahelenamurphy/">
+              <img src="images/002-instagram.png" alt="Instagram icon">
+            </a>
+            <a class="contact-icon" href="https://github.com/lhmurphy">
+              <img src="images/004-github.png" alt="Github icon">
+            </a>
+            <a class="contact-icon" href="https://laurahelenamurphy.medium.com/">
+              <img src="images/003-medium.png" alt="Medium.com icon">
+            </a>
           </div>
         </div>
       </div>
+    </main>
 
 
-      <!-- skills-->
-      <div class="skills">
-        <h2 class="title">skills</h2>
-          <ul class="icons">
-            <li><i class="devicon-html5-plain"></i>HTML 5</li>
-            <li><i class="devicon-css3-plain"></i>CSS 3</li>
-            <li><i class="devicon-react-original"></i>React</li>
-            <li><i class="devicon-javascript-plain"></i>JavaScript</li>
-            <li><i class="devicon-mongodb-plain"></i>MongoDB</li>
-            <li><i class="devicon-express-original"></i>Express</li>
-            <li><i class="devicon-nodejs-plain"></i>Node.js</li>
-            <li><i class="devicon-sass-original"></i>SASS</li>
-            <li><i class="devicon-git-plain"></i>Git</li>
-            <li><i class="devicon-github-plain"></i>GitHub</li>
-            <li><i class="devicon-webpack-plain"></i>Webpack</li>
-            <li><i class="devicon-heroku-original"></i>Heroku</li>
-            <li><i class="devicon-postgresql-plain"></i>PostgreSQL</li>
-            <li><i class="devicon-python-plain"></i>Python</li>
-            <li><i class="devicon-atom-original"></i>Atom</li>
-        </ul>
-      </div>
-      <!-- experience -->
-      <section id="experience" class="experience-wrapper">
-        <h2 class="title">experience</h2>
-        <div class="experience-content">
-          <div class="experience-box">
-            <div class="penguin">
-              <img src="images/penguin.png" alt="bcgdv">
-              <h3>Event Coordinator</h3>
-              <h4>Mar 14 - Jul 17</h4>
-              <p>
-                As Event Coordinator, I was part of a team who implementing a
-                successful program of more than 60 events per year, I reported to
-                the Event Director and worked on high-profile author events across
-                numerous publishing houses. The role consisted of writing compelling
-                event copy for all marketing materials to be published in print and
-                online, creating and sending out effective press releases whilst
-                building relationships with national and regional media contacts.
-                I was responsible for overseeing creative design of promotional
-                material and ensuring all items are proofread.
-              </p>
-            </div>
-          </div>
-          <div class="experience-box">
-            <div class="bcgdv">
-              <img src="images/bcgdv.png" alt="bcgdv">
-              <h3>Venture Support Specialist</h3>
-              <h4>Oct 17 - Mar 19</h4>
-              <p>
-                My role was logistical support for 8 venture teams, acting as a
-                one-contact person for venture staff across all cohorts including
-                engineering, product, growth, strategic/experience design. I worked
-                closely with the GM and Partner on ventures where I coordinated
-                large stakeholder meetings, ensured all staff had the correct access
-                to tech systems and liaised with key clients throughout the venture
-                life-cycle.
-              </p>
-            </div>
-          </div>
-          <div class="experience-box">
-            <div class="general-assembly">
-              <img src="images/general.png" alt="bcgdv">
-              <h3>Software Engineering Immersive</h3>
-              <h4>Mar 19 - Jun 19</h4>
-              <p>
-                I took the plunge and joined the General Assembly Software Engineering
-                Immersive course which was a hugely rewarding challenge. With all
-                of the new technical skills I’ve gained throughout the course,
-                I’m excited to finally be able to realise the multitude of project
-                ideas that have started to fill up my iPhone notes. On top of
-                these skills, I learnt an enormous amount about myself and what
-                I’m capable of achieving in such a short period of time. I’m excited
-                to take these new skills into a web development role so that I can
-                continue this new life-long career of coding and learning.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- projects -->
-
-      <h2 id="projects" class="projects-title">projects</h2>
-
-
-      <section class="projects-wrapper">
-        <div class="projects-wrapper-overlay">
-          <div class="project-box">
-            <div class="project-box-left">
-              <img src="images/spaceinvaders.png" alt="space invaders">
-            </div>
-            <div class="project-box-right">
-              <h3>Space Invaders Game</h3>
-              <h4>HTML5 | CSS | JavaScript </h4>
-              <p>
-                A week-long solo project building a game with pure JavaScript,
-                CSS, Flexbox and GitHub in the theme of Mexican wrestlers inspired
-                by a recent trip to Mexico.
-              </p>
-              <p><a href="https://github.com/lhmurphy/SEI-project-1" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-project-1/" target="_blank">Live site</a></p>
-              <br>
-              <br>
-              <br>
-            </div>
-          </div>
-          <hr>
-          <div class="project-box">
-            <div class="project-box-left">
-              <img src="images/cycling.png" alt="cycling">
-            </div>
-            <div class="project-box-right">
-              <h3>London Cycling</h3>
-              <h4> HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack |
-                AJAX | APIs | Bulma | GitHub | React-mapbox-gl </h4>
-              <p>
-                A two-day pair coding project using React.js on the frontend that
-                consumes data from existing APIs: DarkSky and TFL. Implemented
-                React-mapbox-gl, Webpack, AJAX, JavaScript (ES6), HTML5, Bulma,
-                SCSS, GitHub. My main focus on this project was building the map
-                on the page, consuming the varying data from both APIs and ensuring
-                that data fed through correctly. This app will help cyclists make
-                a decision whether to cycle based on current weather and pollution
-                levels as well as show them Santander bike spots local to them.
-              </p>
-              <p><a href="https://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">See the code</a> | <a href="http://laurahm.com/SEI-Project-2-React-Hackathon/#/" target="_blank">Live site</a></p>
-            </div>
-          </div>
-          <hr>
-          <div class="project-box">
-            <div class="project-box-left">
-              <img src="images/nerdcrate.jpg" alt="nerdcrate">
-            </div>
-            <div class="project-box-right">
-              <h3>Nerd Crate</h3>
-              <h4>HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack |
-                AJAX | Node.js | MongoDB | Mongoose | Express | Bulma | GitHub  </h4>
-              <p>
-                A week-long full-stack project in a group of four people, using
-                Node.js, MongoDB/Mongoose and Express on the backend and using
-                React.js on the frontend. In this project I built the seeds file
-                and worked on the code for the basket. Implemented Webpack, AJAX,
-                JavaScript (ES6), HTML5, Bulma, SCSS, GitHub. This is a prototype
-                for an e-commerce merchandise store.
-              </p>
-              <p><a href="https://github.com/lhmurphy/SEI-Project-3" target="_blank">See the code</a> | <a href="https://nerdcrate.herokuapp.com/#/" target="_blank">Live site</a></p>
-            </div>
-          </div>
-          <hr>
-          <div class="project-box">
-            <div class="project-box-left">
-              <img src="images/wanderlist.png" alt="wanderlist">
-            </div>
-            <div class="project-box-right">
-              <h3>Wanderlist</h3>
-              <h4>HTML5 | SCSS | SASS | JavaScript (ES6) | React.js | Webpack | AJAX
-                | PostgreSQL | Flask | Bulma | GitHub | React Select </h4>
-              <p>
-                A week-long full-stack solo project building the backend database
-                with Python/Postgres and consuming data on the frontend with
-                React.js. Implemented Webpack, AJAX, JavaScript (ES6),
-                PostgreSQL, Flask, HTML5, Bulma, SCSS, GitHub, React Select. As
-                this was a solo project, I planned all wireframes, ERDs and
-                relationship schemas before setting out to build the project. I
-                used Trello to organise and prioritise my time. This is a
-                community-based application for users to find their next read
-                based on their travel destination.
-              </p>
-              <p><a href="https://github.com/lhmurphy/SEI-Project-4" target="_blank">See the code</a> | <a href="https://lauras-travel-books.herokuapp.com/#/" target="_blank">Live site</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact"class="contact-wrapper">
-        <ul>
-          <li><a href="mailto:laurahelenamurphy@gmail.com">< email ></a></li>
-          <li><a href="https://github.com/lhmurphy" target="_blank">< github ></a></li>
-          <li><a href="https://www.linkedin.com/in/lhmurphy/" target="_blank">< linkedin ></a></li>
-          <li><a href="https://twitter.com/lhm8" target="_blank">< twitter ></a></li>
-          <li><a href="https://medium.com/@laurahelenamurphy/why-i-chose-programming-as-my-new-career-path-b6c27749860f" target="_blank">< blog ></a></li>
-        </ul>
-      </section>
-    </div>
+    
   </body>
 </html>

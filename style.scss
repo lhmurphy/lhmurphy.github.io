@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+html {
+  background: #f6f6f6;
+  font-family: 'Fira Mono', monospace;
+  width: 100vw;
+}
+
+body {
+  width: 100vw;
+  background-color: yellow;
+}
+
+@media only screen and (min-width: 1025px) {
+  html {
+    border: 15px solid;
+  }
+}
